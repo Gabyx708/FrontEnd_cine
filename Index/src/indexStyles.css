@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#borderes{
+    background-color: red;
+}
+#colorFondo{
+    background-color: #1f1a1a;
+}
+body{
+	background: #292222;
+}
+
+header{
+	width: 100%;
+}
+
+.tituloNav{
+    color: white;
+    margin-top: -20px;
+}
+
+.left-links {
+    float: left;
+    margin-right: 15px;
+  }
+  
+  .right-link {
+    margin-left: 10px;
+    float: right;
+  }
+  
+  .menu::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.navegacion ul{
+	list-style: none;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+    font-size: 18px;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	background-color: #ff0000;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    list-style: none; /* Quita las viñetas de la lista */
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
