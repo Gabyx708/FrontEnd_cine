@@ -54,7 +54,7 @@ header{
 	display: block;
 	padding: 15px 20px;
 	color: #ffffff;
-    font-size: 18px;
+  font-size: 18px;
 	font-family: 'Open sans';
 	text-decoration: none;
 }
@@ -90,3 +90,43 @@ header{
 	visibility: visible;
 	opacity: 1;
 }
+
+
+.imagenCartelera
+{
+  height: 255px;
+  width: 180px;
+  display: block; /* Hacer que la imagen sea un elemento en bloque */
+  margin: 0 auto; /* Centrar la imagen horizontalmente si es necesario */
+  background-color: #333; /* Color de fondo del recuadro */
+  padding: 3px; /* Añade espaciado alrededor de la imagen */
+}
+.textoCartelera
+{
+  /* font-family: 'Open sans'; */
+	text-decoration: none;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  text-align: center; /* Alinear el texto al centro */
+}
+
+.SeccionCartelera {
+  
+  margin-top: 50px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Espaciar los elementos horizontalmente */
+  border-bottom: rgb(255, 252, 252) solid;
+  border-top: #fffbfb solid;
+}
+
+.peliculaCartelera {
+  
+  flex: 0 0 calc(20% - 20px); /* Ajustar el ancho de cada elemento para tres en una fila */
+  margin: 10px; /* Espacio entre las películas */
+  text-align: center;
+}
+
+
+
