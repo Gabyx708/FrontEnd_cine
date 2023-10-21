@@ -7,10 +7,10 @@
 }
 
 #borderes{
-    background-color: red;
+    background-color: rgb(252, 252, 252);
 }
 #colorFondo{
-    background-color: #1f1a1a;
+    background-color: #2a2828;
 }
 body{
 	background: #292222;
@@ -113,12 +113,26 @@ header{
 
 .SeccionCartelera {
   
-  margin-top: 50px;
+  margin-bottom: 15px;
   display:flex;
-  flex-wrap: wrap;
+  overflow: scroll;
   justify-content: flex-start; /* Espaciar los elementos horizontalmente */
-  border-bottom: rgb(255, 252, 252) solid;
-  border-top: #fffbfb solid;
+  border-top: rgb(75, 74, 74) solid 0.1px;
+  border-left:rgb(75, 74, 74) solid 0.1px;
+  border-top-left-radius: 25px;
+}
+.SeccionCartelera::-webkit-scrollbar
+{
+  width: 0px;
+  height: 7px;
+  
+  
+}
+.SeccionCartelera::-webkit-scrollbar-thumb
+{
+  background: rgb(74, 73, 73);
+  border-radius: 15px;
+  
 }
 
 .peliculaCartelera {

@@ -6,7 +6,7 @@ const getPelicula = async (id) => {
     }
     return result;
 }
-const Api = {
+const ApiPelicula = {
     Get : getPelicula
 }
-export default Api;
+export default ApiPelicula;
