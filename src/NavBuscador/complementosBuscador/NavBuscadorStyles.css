@@ -1,0 +1,74 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.filtroGenero ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+} */
+.BuscadorVertical{
+    list-style: none;
+}
+.checkbox
+{
+    background: rgb(0, 247, 82);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos comunes para <ul> con las clases filtroGenero y filtroFecha */
+ul.filtroGenero,
+ul.filtroFecha {
+    /* Estilos compartidos para filtroGenero y filtroFecha */
+    background-color: lightblue;
+    /* Otros estilos compartidos */
+}
+
+/* Estilos comunes para <li> dentro de <ul> con las clases filtroGenero y filtroFecha */
+ul.filtroGenero li,
+ul.filtroFecha li {
+    /* Estilos compartidos para los elementos <li> dentro de filtroGenero y filtroFecha */
+    color: red;
+    /* Otros estilos compartidos */
+}
+
+/* Estilos comunes para <input> dentro de <ul> con las clases filtroGenero y filtroFecha */
+ul.filtroGenero input,
+ul.filtroFecha input {
+    /* Estilos compartidos para los elementos <input> dentro de filtroGenero y filtroFecha */
+    border: 1px solid blue;
+    /* Otros estilos compartidos */
+}

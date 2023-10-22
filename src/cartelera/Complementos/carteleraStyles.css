@@ -1,22 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#borderes{
-    background-color: rgb(252, 252, 252);
-}
-#colorFondo{
-    background-color: #2a2828;
-}
-body{
-	background: black;
-}
-
-
 .imagenCartelera
 {
   height: 255px;
@@ -37,14 +18,12 @@ body{
 }
 
 .SeccionCartelera {
-  
+  margin-top: 20px;
   margin-bottom: 15px;
-  display:flex;
-  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start; /* Espaciar los elementos horizontalmente */
-  border-top: rgb(75, 74, 74) solid 0.1px;
-  border-left:rgb(75, 74, 74) solid 0.1px;
-  border-top-left-radius: 25px;
 }
 .SeccionCartelera::-webkit-scrollbar
 {
@@ -62,10 +41,7 @@ body{
 
 .peliculaCartelera {
   
-  flex: 0 0 calc(20% - 20px); /* Ajustar el ancho de cada elemento para tres en una fila */
-  margin: 10px; /* Espacio entre las películas */
+  flex: 0 0 calc(25% - 20px);
+  margin: 10px;
   text-align: center;
 }
-
-
-
