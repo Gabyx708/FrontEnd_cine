@@ -53,7 +53,7 @@ button {
 ul.filtroGenero,
 ul.filtroFecha {
     /* Estilos compartidos para filtroGenero y filtroFecha */
-    background-color: lightblue;
+    list-style: none;
     /* Otros estilos compartidos */
 }
 
@@ -61,7 +61,7 @@ ul.filtroFecha {
 ul.filtroGenero li,
 ul.filtroFecha li {
     /* Estilos compartidos para los elementos <li> dentro de filtroGenero y filtroFecha */
-    color: red;
+    color: rgb(255, 255, 255);
     /* Otros estilos compartidos */
 }
 

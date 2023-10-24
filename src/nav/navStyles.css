@@ -5,13 +5,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-#borderes{
-    background-color: rgb(252, 252, 252);
-}
-#colorFondo{
-    background-color: #2a2828;
-}
 body{
 	background: black;
 }
@@ -20,8 +13,11 @@ header{
 	width: 100%;
 }
 
+.texto{
+  color: white;
+  text-decoration: none;
+}
 .tituloNav{
-    color: white;
     margin-top: -20px;
 }
 
@@ -30,16 +26,16 @@ header{
     margin-right: 15px;
   }
   
-  .right-link {
-    margin-left: 10px;
-    float: right;
-  }
-  
-  .menu::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.right-link {
+  margin-left: 10px;
+  float: right;
+}
+
+.menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 .navegacion ul{
@@ -73,9 +69,9 @@ header{
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
-    padding: 0; /* Elimina el relleno */
-    margin: 0; /* Elimina el margen */
-    list-style: none; /* Quita las viñetas de la lista */
+    padding: 0; 
+    margin: 0;
+    list-style: none;
 }
 
 .submenu li a{
@@ -98,6 +94,7 @@ header{
 .container {
   padding: 15px;
   position: relative; /* Agregamos position relative para el posicionamiento absoluto interno */
+  display: flex;
 }
 
 input {
@@ -119,7 +116,7 @@ input {
   color: grey;
 }
 
-.btn {
+.botonn {
   position: absolute;
   right: 0px;
   width: 27px;
@@ -133,7 +130,7 @@ input {
   transition: .5s;
 }
 
-.btn i {
+.botonn i {
   position: absolute;
   right: 3px;
   bottom: 4px;
@@ -149,6 +146,6 @@ input {
   transform: rotate(-360deg);
 }
 
-.btn:hover {
+.botonn:hover {
   background: #4a7599;
 }
