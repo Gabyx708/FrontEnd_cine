@@ -1,0 +1,88 @@
+/* Buscador */
+.buscador
+{
+  margin-top: 15px;
+  width: 600px;
+  display: flex;
+
+}
+.buscador-titulo
+{
+  width: 70%;
+  padding-left: 10px;
+  margin-top: 2%;
+  border: black 1px solid;
+  border-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #fffefebf;
+}
+.calendario
+{
+  width: 19%;
+  margin-top: 2%;
+  border: black 1px solid;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #fffefebf;
+}
+/*Fin buscador */
+
+/* Menu Desplegable */
+.container-filtrador{
+	width: 1000px;
+}
+
+.container-filtrador ul{
+	list-style: none;
+  padding-left: 1%;
+}
+
+.menu-filtro > li{
+	position: relative;
+	display: inline-block;
+  color: white;
+  margin-right: 2%;
+}
+
+.menu-filtro > li > a{
+	display: block;
+	color: #ffffff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu-filtro li a:hover{
+	color: #CE7D35;
+}
+
+
+
+/* Submenu*/
+
+.submenu-filtro{
+  position: absolute;
+	background: #231818;
+	visibility: hidden;
+	opacity: 0;
+  border-radius: 15px;
+}
+
+.submenu-filtro li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu-filtro li:hover .submenu-filtro{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Fin menu desplegable */
+
+/* Filtro de búsqueda */
+

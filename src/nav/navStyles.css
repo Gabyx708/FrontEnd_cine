@@ -5,6 +5,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 body{
 	background: black;
 }
@@ -27,7 +28,7 @@ header{
   }
   
 .right-link {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   float: right;
 }
 
@@ -60,7 +61,7 @@ header{
 	transition: all .3s;
 }
 
-/* Submenu*/
+Submenu
 
 .submenu{
     position: absolute;
@@ -74,21 +75,6 @@ header{
     list-style: none;
 }
 
-.submenu li a{
-	display: block;
-	padding: 15px;
-  font-size: 15px;
-	color: #fff;
-  text-align: left;
-	font-family: 'Open sans';
-	text-decoration: none;
-}
-
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}
-
 
 
 .container {
@@ -97,7 +83,7 @@ header{
   display: flex;
 }
 
-input {
+.input-nav {
   outline: none;
   box-sizing: border-box;
   height: 27px;
@@ -116,7 +102,7 @@ input {
   color: grey;
 }
 
-.botonn {
+.boton-input {
   position: absolute;
   right: 0px;
   width: 27px;
@@ -130,12 +116,13 @@ input {
   transition: .5s;
 }
 
-.botonn i {
+.boton-input i {
   position: absolute;
   right: 3px;
   bottom: 4px;
   color: rgb(0, 0, 0);
   transition: all .7s ease;
+  
 }
 
 .container:hover input {

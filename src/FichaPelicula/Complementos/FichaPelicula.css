@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#main
+{
+    background: rgba(46, 46, 46, 0.137);
+    border-radius: 15px;
+}
+.ficha-tecnica-container {
+    display: flex;
+}
+
+.titulo-imagen
+{
+    margin-top: 2%;  
+}
+
+.ficha-tecnica
+{
+    margin-top: 1.5%;
+    margin-left: 3%;
+}
+
+.imagen-ficha
+{
+    height: 582px;
+    width: 427.59px;
+    border: 1px rgba(62, 62, 62, 0.491) solid;
+}
+
+.tabla-tecnica{
+    height: 12%;
+    color: white;
+}
+
+.tabla-tecnica th 
+{
+    padding-bottom: 5px;
+}
+
+.encabezado-tecnico {
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.tabla-tecnica th.sinopsis {
+    vertical-align: top;
+}
+
+.trailer
+{
+    width: 560px; 
+    height: 315px;
+}
+
+/* Para funciones */
+
+.container-funcion-compra {
+    display: flex;
+    margin-top: 1%;
+}
+
+.funciones {
+    flex: 2; 
+    padding: 1%; 
+}
+
+.container-funcion-compra h3 {
+    color: white;
+}
+
+.funciones-disponibles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.contenedor-funcion {
+    margin: 5px;
+    border-radius: 15px;
+    border: white 1px solid;
+    width: 100%;
+}
+
+.funciones-disponibles a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.638);
+}
+
+.funciones-disponibles th {
+    padding-left: 5%;
+}
+
+.funcion th a {
+    display: block;
+}
+
+
+
+#funcion-compra
+{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr))
+}
+
+.tabla-funciones
+{
+    width: 100%;
+    margin-left: 2%;
+}
+
+.titulo-funciones
+{
+    justify-content: center;
+}
+
+/* Para Compra*/
+
+.funciones-compra {
+    flex: 1;
+    padding: 1%;
+    /* visibility: hidden; */
+}
+
+.boton-comprar {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254, 254, 254);
+    border-radius: 150px;
+    width: 50%;
+    height: 40px;
+  }
+  
+  .botones-aum-dis {
+    background: rgb(148, 146, 146);
+    flex-grow: 1;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .bor-izq
+  {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .bor-der
+  {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  
+  .cantidad-boletos {
+    flex-grow: 2;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  

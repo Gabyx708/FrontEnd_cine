@@ -1,44 +1,27 @@
 function GenerarbuscadorCartelera() {
     const busc = document.createElement('div');
-    busc.className = 'menu-bar';
+    busc.className = 'container-filtrador';
     busc.innerHTML = `
-    <ul>
-        <li><a href="#">Filtros <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-menu">
-                <ul>
-                <li>
-                    <a href="#">Generos <i class="fas fa-caret-right"></i></a>
-                    
-                    <div class="dropdown-menu-1">
-                    <ul>
-                        <li> <a class="texto" id="genAc"> ACCION </a></li>
-                        <li> <a class="texto" id="genAv"> AVENTURA </a></li>
-                        <li> <a class="texto" id="genFi"> FICCION </a></li>
-                        <li> <a class="texto" id="genCo"> COMEDIA </a></li>
-                        <li> <a class="texto" id="genDo"> DOCUMENTAL </a></li>
-                        <li> <a class="texto" id="genDr"> DRAMA </a></li>
-                        <li> <a class="texto" id="genFa"> FANTASIA </a></li>
-                        <li> <a class="texto" id="genMu"> MUSICAL </a></li>
-                        <li> <a class "texto" id="genSu"> SUSPENSO </a></li>
-                        <li> <a class="texto" id="genTe"> TERROR </a> </li>
-                    </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Fechas <i class="fas fa-caret-right"></i></a>
-                    
-                    <div class="dropdown-menu-1">
-                        <ul>
-                            <li> <a class="texto" id="genAc"> HOY </a></li>
-                            <li> <a class="texto" id="genAv"> PROXIMAS </a></li>
-                            <li> <a class="texto" id="genFi"> CUSTOM </a></li>
-                        </ul>
-                    </div>
-                </li>
-                </ul>
-            </div>
+    <ul class="menu-filtro">
+        <li>
+            <a href="#">GENERO <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu-filtro">
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="null"> REESTABLECER</a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genAc"> ACCION</a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genAv"> AVENTURA</a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genFi"> FICCION</a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genCo"> COMEDIA </a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genDo"> DOCUMENTAL </a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genDr"> DRAMA </a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genFa"> FANTASIA </a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genMu"> MUSICAL </a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genSu"> SUSPENSO </a></li>
+                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genTe"> TERROR </a> </li>  
+            </ul>       
         </li>
-    </ul>`;
+        
+    </ul>
+    `;
 
     return busc;
 }

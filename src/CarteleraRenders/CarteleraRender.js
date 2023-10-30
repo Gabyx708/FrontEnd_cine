@@ -1,9 +1,12 @@
 export default function GenerarPeliculaCartelera(funcion) {
     const peliculaElemento = document.createElement('div');
     peliculaElemento.className = 'peliculaCartelera';
-    peliculaElemento.innerHTML = `
-        <img class="imagenCartelera" src="${funcion.pelicula.poster}" alt="${funcion.pelicula.titulo}">
-        <a class="textoCartelera">${funcion.pelicula.titulo}</a>
+    peliculaElemento.innerHTML = `    
+        <a href="/src/FichaPelicula/fichaPelicula.html?peliculaId=${funcion.pelicula.peliculaId}" class="contenedor-funcion funcion-link">
+            <img class="imagenCartelera" src="${funcion.pelicula.poster}" alt="${funcion.pelicula.titulo}">
+            <a href="/src/FichaPelicula/fichaPelicula.html?peliculaId=${funcion.pelicula.peliculaId}" class="textoCartelera">${funcion.pelicula.titulo.toUpperCase()}</a> 
+        </a>
+        
     `;
     return peliculaElemento;
 };

@@ -7,34 +7,18 @@ function GenerarNavBuscador() {
         </li>
         <ul class="menu">
             <li class="left-links"> 
-                <a href="#">PELICULAS</a>
-                <ul class="submenu">
-                    <li> <a href="/src/cartelera/cartelera.html">CARTELERA</a> </li>
-                    <li> <a href="#">DESTACADAS</a> </li>
-                    <li> <a href="#">PROXIMAMENTE</a> </li>
-                </ul>
+                <a href="/src/cartelera/cartelera.html">CARTELERA</a> </li>
             </li>
             <li class="left-links">
-                <a href="#">Funciones</a>
-                <ul class="submenu">
-                    <li>
-                        <a href="#">HOY</a>
-                    </li>
-                    <li>
-                        <a href="#">CARTELERA</a>
-                    </li>
-                    <li>
-                        <a href="#">BUSCAR</a>
-                    </li>
-                </ul>
+                <a href="#">HOY</a>
             </li>
-            <li class="right-link">
-                <a href="#">mis tickets</a> 
+            <li class="left-links">
+                <a href="#">PROXIMAMENTE</a>
             </li>
             <li class="right-link">
                 <div class="container">
-                    <input type="text" placeholder="Buscar" class="inputNav" id='inputBusqued'>
-                    <div class="botonn">
+                    <input type="text" placeholder="Buscar" class="input-nav" id='inputBusqued'>
+                    <div class="boton-input">
                         <i class="fa fa-search"></i>
                     </div>
                 </div> 

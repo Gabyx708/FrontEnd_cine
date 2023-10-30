@@ -28,12 +28,12 @@ body{
 }
 .textoCartelera
 {
-  /* font-family: 'Open sans'; */
+  font-family: 'Open sans';
 	text-decoration: none;
   font-size: 16px;
-  color: white;
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.847);
   text-align: center;
+  
 }
 
 .SeccionCartelera {
@@ -63,11 +63,16 @@ body{
 }
 
 .peliculaCartelera {
-  
-  flex: 0 0 calc(20% - 20px);
+  padding-left: 3%;
+  padding-right: 3%;
+  flex: 0 0 calc(24% - 8px);
   margin: 10px;
   text-align: center;
 }
 
+.texto
+{
+  width: auto;
+}
 
 
