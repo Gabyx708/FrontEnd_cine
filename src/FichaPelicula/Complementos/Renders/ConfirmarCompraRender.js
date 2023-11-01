@@ -1,20 +1,21 @@
-export default function GenerarCompra(funcion) {
+export default function GenerarCompra(funcionId,horario,fecha,disponibles) {
     const compra = document.createElement('div');
-    compra.className = '';
+    compra.className = 'confirmar-compra';
     compra.innerHTML = `
-        <ul>
-            <li>Titulo</li>
-            <li>Fecha</li>
-            <li>Horario</li>
-            <li>Sala</li>
-            <li>Disponibles</li>
-        </ul>
+        <h4 class='texto-compra'>COMPLETAR COMPRA</h4>
+        <a class='texto-compra'> FECHA: ${fecha} <a>
+        <a class='texto-compra'> HORARIO: ${horario} <a>
+        <a class='texto-compra'> DISPONIBLES: ${disponibles} <a>
+        <input type="text" placeholder="Ingrese su nombre" class="input-nombre">
         <div class="boton-comprar">
-            <label class="botones-aum-dis bor-izq" id="disminuir">-</label> 
-            <label class="cantidad-boletos" id="contador-boletos">0</label>
-            <label class="botones-aum-dis bor-der" id="aumentar">+</label>
+            <a class="botones-aum-dis bor-izq" id="disminuir">-</a> 
+            <a class="cantidad-boletos" id="contador-boletos">0</a>
+            <a class="botones-aum-dis bor-der" id="aumentar">+</a>
         </div>
-        <a>Confirmar</a>
+        <div class="container-boton-compra">
+            <a class="boton-compra">CONFIRMAR</a>
+        </div>
+  
     `;
 
     return compra;

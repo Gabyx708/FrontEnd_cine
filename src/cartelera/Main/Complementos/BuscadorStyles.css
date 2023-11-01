@@ -42,13 +42,13 @@
 .menu-filtro > li{
 	position: relative;
 	display: inline-block;
-  color: white;
+  color: rgba(255, 255, 255, 0.89);
   margin-right: 2%;
 }
 
 .menu-filtro > li > a{
 	display: block;
-	color: #ffffff;
+	color: rgba(255, 255, 255, 0.89);
 	font-family: 'Open sans';
 	text-decoration: none;
 }
@@ -72,7 +72,7 @@
 .submenu-filtro li a{
 	display: block;
 	padding: 15px;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.89);
 	font-family: 'Open sans';
 	text-decoration: none;
 }

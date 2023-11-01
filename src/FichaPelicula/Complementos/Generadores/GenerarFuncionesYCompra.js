@@ -1,15 +1,17 @@
 import GenerarFuncionYCompraRender from '../Renders/FuncionYCompraRender.js';
+import ApiTicket from '../../../services/canTicketApi.js'
 
 async function CargarFunciones(id,pelicula) {
     const seccionContenedora = document.getElementById(id);
     seccionContenedora.innerHTML = '';
     if (pelicula.funciones.length === 0) {
         const mensajeNoEncontrado = document.createElement('div');
-        mensajeNoEncontrado.textContent = 'No hay ninguna función disponible en este momento :(';
+        mensajeNoEncontrado.textContent = 'NO HAY NINGUNA FUNCIÓN DISPONIBLE EN ESTE MOMENTO :(';
         seccionContenedora.appendChild(mensajeNoEncontrado);
     } else {
         for (const funcion of pelicula.funciones) {
-                seccionContenedora.appendChild(GenerarFuncionYCompraRender(pelicula,funcion));
+                const cantTickets = await ApiTicket.GetCantTickets(funcion.funcionId);
+                seccionContenedora.appendChild(GenerarFuncionYCompraRender(pelicula,funcion, cantTickets.cantidad));
             }
         }
 }

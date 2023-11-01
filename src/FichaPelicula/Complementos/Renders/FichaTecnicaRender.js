@@ -2,7 +2,7 @@ export default function GenerarFichaTecnica(pelicula) {
     const fichaTecnica = document.createElement('div');
     fichaTecnica.className = 'row';
     fichaTecnica.innerHTML = `
-    <h1 style="color: white;">${pelicula.titulo.toUpperCase()}</h1>
+    <h1>${pelicula.titulo.toUpperCase()}</h1>
     <section class="ficha-tecnica-container">
         <div class="titulo-imagen">
             <img src="${pelicula.poster}" class="imagen-ficha" >
@@ -52,7 +52,7 @@ export default function GenerarFichaTecnica(pelicula) {
                     </tr>
                     <tr>
                         <th class="sinopsis">
-                            <h5>Trailer:</h5>
+                            <h5>TRAILER:</h5>
                         </th>
                         <th>
                             <iframe class="trailer" src="${pelicula.trailer}" title="${pelicula.titulo} frameborder="0" allowfullscreen></iframe>

@@ -15,7 +15,7 @@ header{
 }
 
 .texto{
-  color: white;
+  color: rgba(255, 255, 255, 0.89);
   text-decoration: none;
 }
 .tituloNav{
@@ -57,7 +57,7 @@ header{
 }
 
 .menu li a:hover{
-	background-color: #4a7599;
+	background-color: rgba(138, 138, 138, 0.44);;
 	transition: all .3s;
 }
 

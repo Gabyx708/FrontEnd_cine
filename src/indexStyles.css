@@ -6,16 +6,13 @@
 	box-sizing: border-box;
 }
 
-#borderes{
-    background-color: rgb(252, 252, 252);
+#main{
+  background: rgba(46, 46, 46, 0.137);
+  border-radius: 15px;
 }
 #colorFondo{
     background-color: #2a2828;
 }
-body{
-	background: black;
-}
-
 
 .imagenCartelera
 {
@@ -23,7 +20,7 @@ body{
   width: 180px;
   display: block;
   margin: 0 auto;
-  background-color: #333; 
+  background-color: rgba(138, 138, 138, 0.44);; 
   padding: 3px; 
 }
 .textoCartelera
@@ -31,21 +28,21 @@ body{
   font-family: 'Open sans';
 	text-decoration: none;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.847);
+  color: rgba(255, 255, 255, 0.788);
   text-align: center;
+  user-select: none;
   
 }
 
 .SeccionCartelera {
   margin-bottom: 15px;
   display: flex;
-  overflow-x: scroll; /* Agrega la barra de desplazamiento horizontal */
-  overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+  overflow-x: scroll;
+  overflow-y: hidden;
   justify-content: flex-start;
-  border-top: rgb(75, 74, 74) solid 0.1px;
-  border-left: rgb(75, 74, 74) solid 0.1px;
-  border-top-left-radius: 25px;
+  border-top: rgba(138, 138, 138, 0.44) solid 3px;
   height: 320px;
+  padding-left: 5px;
 }
 
 .SeccionCartelera::-webkit-scrollbar
@@ -73,6 +70,7 @@ body{
 .texto
 {
   width: auto;
+  color: rgba(255, 255, 255, 0.788);
 }
 
 

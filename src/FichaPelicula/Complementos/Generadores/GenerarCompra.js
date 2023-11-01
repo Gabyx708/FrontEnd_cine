@@ -1,8 +1,8 @@
 import ConfirmarCompra from '../Renders/ConfirmarCompraRender.js'
 
-async function CargarConfirmarCompra(id,funcion) {
+async function CargarConfirmarCompra(id,funcionId,horario,fecha,cantidad) {
     const contenedor = document.getElementById(id);
-    const unaFichaTecnica = ConfirmarCompra(funcion);
+    const unaFichaTecnica = ConfirmarCompra(funcionId,horario,fecha,cantidad);
     contenedor.appendChild(unaFichaTecnica);
 }
 
