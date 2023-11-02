@@ -19,7 +19,7 @@
 }
 .calendario
 {
-  width: 19%;
+  width: 20%;
   margin-top: 2%;
   border: black 1px solid;
   border-radius: 50px;
@@ -31,7 +31,7 @@
 
 /* Menu Desplegable */
 .container-filtrador{
-	width: 1000px;
+  width: 100%;
 }
 
 .container-filtrador ul{
@@ -54,7 +54,7 @@
 }
 
 .menu-filtro li a:hover{
-	color: #CE7D35;
+	color: rgb(124, 124, 124);
 }
 
 
@@ -63,10 +63,10 @@
 
 .submenu-filtro{
   position: absolute;
-	background: #231818;
+	background: rgb(48, 33, 33);
 	visibility: hidden;
 	opacity: 0;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .submenu-filtro li a{

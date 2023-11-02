@@ -3,9 +3,9 @@ export default function GenerarCompra(funcionId,horario,fecha,disponibles) {
     compra.className = 'confirmar-compra';
     compra.innerHTML = `
         <h4 class='texto-compra'>COMPLETAR COMPRA</h4>
-        <a class='texto-compra'> FECHA: ${fecha} <a>
-        <a class='texto-compra'> HORARIO: ${horario} <a>
-        <a class='texto-compra'> DISPONIBLES: ${disponibles} <a>
+        <a class='texto-compra' id="fecha"> FECHA: ${fecha} <a>
+        <a class='texto-compra' id="horario"> HORARIO: ${horario} <a>
+        <a class='texto-compra' id="disponibles"> DISPONIBLES: ${disponibles} <a>
         <input type="text" placeholder="Ingrese su nombre" class="input-nombre">
         <div class="boton-comprar">
             <a class="botones-aum-dis bor-izq" id="disminuir">-</a> 

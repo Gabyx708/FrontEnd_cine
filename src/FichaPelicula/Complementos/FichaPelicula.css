@@ -7,17 +7,18 @@
     
 }
 
-h1 
-{
-    color: rgba(255, 255, 255, 0.788);;
-}
-
 #main
 {
-    font-style: italic;
+    font-family: 'Roboto', sans-serif;
     background: rgba(46, 46, 46, 0.137);
     border-radius: 15px;
 }
+
+h1 
+{
+    color: rgba(255, 255, 255, 0.788);
+}
+
 .ficha-tecnica-container {
     display: flex;
 }
