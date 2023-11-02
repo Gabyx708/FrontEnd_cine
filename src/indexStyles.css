@@ -9,6 +9,8 @@
 #main{
   background: rgba(46, 46, 46, 0.137);
   border-radius: 15px;
+  /* border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; */
   font-family: 'Roboto', sans-serif;
 }
 #colorFondo{

@@ -7,10 +7,10 @@ function GenerarNavBuscador() {
         </li>
         <ul class="menu">
             <li class="left-links"> 
-                <a href="/src/cartelera/cartelera.html">CARTELERA</a> </li>
+                <a href="../../src/cartelera/cartelera.html">CARTELERA</a> </li>
             </li>
             <li class="left-links">
-                <a href="src/cartelera/cartelera.html?fecha=hoy">HOY</a>
+                <a href="../../src/cartelera/cartelera.html?fecha=hoy">HOY</a>
             </li>
             <li class="right-link">
                 <div class="container">
