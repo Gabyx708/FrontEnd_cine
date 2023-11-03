@@ -105,15 +105,24 @@ function mostrarModal() {
 
 function cerrarModal() {
     modal.style.display = 'none';
+    location.reload();
 }
 
-async function CrearTicket(guardarIdPelicula,cantidadBoletos,nombreUsuario)
-{
-    const resultadoTicket= await TicketApi.Post(guardarIdPelicula,cantidadBoletos,nombreUsuario);
-    let ventanaModal= await GenerarVentanaModal.Get('miVentanaModal',resultadoTicket);
+async function CrearTicket(guardarIdPelicula, cantidadBoletos, nombreUsuario) {
+    let ventanaModal = null;
+    const resultadoTicket = await TicketApi.Post(guardarIdPelicula, cantidadBoletos, nombreUsuario);
+
+    if (typeof resultadoTicket === 'object') {
+        ventanaModal = await GenerarVentanaModal.Get('miVentanaModal', resultadoTicket, true);
+    } else if (typeof resultadoTicket === 'string') {
+        ventanaModal = await GenerarVentanaModal.Get('miVentanaModal', resultadoTicket, false);
+    }
+
     mostrarModal();
-    return ventanaModal
+    return ventanaModal;
 }
+
+
 
 
 

@@ -5,7 +5,7 @@ function GenerarNavBuscador() {
     <div class="footer-container">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="https://raw.githubusercontent.com/Lucasgomez14/complementosImagenes/main/imagenesTP3/cinema-grande.png" alt="Logo del cine">
+                <img src="https://raw.githubusercontent.com/Lucasgomez14/complementosImagenes/main/imagenesTP3/cinema-grandepro.png" alt="Logo del cine">
                 <h4> CINETRON <h4>
             </div>
             <div class="footer-links">

@@ -16,8 +16,9 @@ const PostTickets = async (id, cantidad, usuario) => {
 
         if (response.ok) {
             result = await response.json();
-        } else {
-            console.error('Error en la solicitud:', response.status);
+        } else if(response.status === 409)
+        {
+            result = ('la cantidad de butacas disponibles es menor a la solicitada')
         }
     } catch (error) {
         console.error('Error en la solicitud:', error);

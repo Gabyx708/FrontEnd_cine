@@ -66,10 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
         fechaParametro: null,
     };
 
-    // Obtén la URL actual
     const currentURL = window.location.href;
 
-    // Verifica si la URL contiene la palabra "hoy"
     if (currentURL.includes('hoy')) {
         const today = new Date();
         const dd = String(today.getDate()).padStart(2, '0');
@@ -77,11 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const yyyy = today.getFullYear();
         const fechaHoy = yyyy + '-' + mm + '-' + dd;
 
-        // Aplica el filtro para la fecha actual
         selectedValues.fechaParametro = fechaHoy;
         fechaSeleccionadaInput.value = fechaHoy;
 
-        // Actualiza la visualización de la cartelera
         applyFilters();
     }
     else
@@ -89,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         applyFilters();
     }
 });
+
 
 
 

@@ -13,8 +13,11 @@ async function CargarFunciones(id, pelicula) {
             const fechaFuncion = new Date(funcion.fecha);
             if (funcion.fecha <= ObtenerDiaDeHoy()) {
                 const cantTickets = await ApiTicket.GetCantTickets(funcion.funcionId);
-                seccionContenedora.appendChild(GenerarFuncionYCompraRender(pelicula, funcion, cantTickets.cantidad));
-                contador= contador + 1;
+                if (cantTickets.cantidad > 0)
+                {
+                    seccionContenedora.appendChild(GenerarFuncionYCompraRender(pelicula, funcion, cantTickets.cantidad));
+                    contador= contador + 1;
+                }
             }
         }
         if (contador === 0)

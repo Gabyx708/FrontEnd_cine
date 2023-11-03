@@ -1,9 +1,17 @@
 import VentanaModal from '../Renders/VentanaModalRender.js';
+import SinButacasRender from '../Renders/GenerarSinButacasRender.js'
 
-async function CargarVentanaModal(id, ticketResponse) {
+async function CargarVentanaModal(id, ticketResponse, flag) {
+    console.log(ticketResponse);
     const contenedor = document.getElementById(id);
-    const unaVentanaModal = await VentanaModal(ticketResponse);
-    contenedor.appendChild(unaVentanaModal);
+    let unaVentanaModal = null;
+    if (flag) {
+        unaVentanaModal = await VentanaModal(ticketResponse);
+        contenedor.appendChild(unaVentanaModal);
+    } else {
+        unaVentanaModal = SinButacasRender(ticketResponse);
+        contenedor.appendChild(unaVentanaModal);
+    }
 }
 
 const laVentanaModal = {
@@ -11,3 +19,4 @@ const laVentanaModal = {
 };
 
 export default laVentanaModal;
+
