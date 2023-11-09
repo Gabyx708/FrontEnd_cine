@@ -11,7 +11,7 @@ async function CargarFunciones(id, pelicula) {
         let contador = 0;
         for (const funcion of pelicula.funciones) {
             const fechaFuncion = new Date(funcion.fecha);
-            if (funcion.fecha <= ObtenerDiaDeHoy()) {
+            if (funcion.fecha >= ObtenerDiaDeHoy()) {
                 const cantTickets = await ApiTicket.GetCantTickets(funcion.funcionId);
                 if (cantTickets.cantidad > 0)
                 {
@@ -46,5 +46,5 @@ function ObtenerDiaDeHoy()
     const dd = String(today.getDate()).padStart(2, '0');
     const mm = String(today.getMonth() + 1).padStart(2, '0');
     const yyyy = today.getFullYear();
-    return yyyy + '-' + mm + '-' + dd;
+    return dd + '-' + mm + '-' + yyyy;
 }

@@ -37,34 +37,28 @@
 .SeccionCartelera {
   margin-bottom: 15px;
   display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
   justify-content: flex-start;
-  border-top: rgba(138, 138, 138, 0.44) solid 3px;
   height: 320px;
   padding-left: 5px;
-}
-
-.SeccionCartelera::-webkit-scrollbar
-{
-  width: 0px;
-  height: 7px;
-  
-  
-}
-.SeccionCartelera::-webkit-scrollbar-thumb
-{
-  background: rgb(74, 73, 73);
-  border-radius: 15px;
-  
+  padding-right: 5px;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .peliculaCartelera {
+  width: 180px;
   padding-left: 3%;
   padding-right: 3%;
-  flex: 0 0 calc(24% - 8px);
-  margin: 10px;
+  flex: 0 0 calc(25% - 15px);
+  margin: 20px 10px 10px 10px;
   text-align: center;
+}
+
+
+.peliculaCartelera:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 .texto
@@ -73,4 +67,25 @@
   color: rgba(255, 255, 255, 0.788);
 }
 
+.scroll-arrow {
+  color: white;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.scroll-arrow-left {
+  float: left;
+}
+
+.scroll-arrow-right {
+  float: right;
+}
+
+.contenedor-cartelera{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-top: rgba(138, 138, 138, 0.44) solid 3px;
+}
 
