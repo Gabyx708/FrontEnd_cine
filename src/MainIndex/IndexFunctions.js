@@ -2,9 +2,9 @@ import CargarCarteleraDestacadas from '../CarteleraRenders/DestacadasCartelera.j
 import CargarCartelera from '../CarteleraRenders/PeliculasCarteleraGen.js';
 
 function aplicarDesplazamiento(scrollContainer, scrollArrowLeft, scrollArrowRight) {
-    const containerWidth = scrollContainer.scrollWidth / 3.3;
     scrollArrowLeft.addEventListener('click', () => {
-        console.log('Hiciste clic en la flecha izquierda');
+        let containerWidth = scrollContainer.clientWidth;
+        console.log("El widht: " + containerWidth);
         scrollContainer.scrollBy({
             left: -containerWidth,
             behavior: 'smooth' 
@@ -12,7 +12,8 @@ function aplicarDesplazamiento(scrollContainer, scrollArrowLeft, scrollArrowRigh
     });
 
     scrollArrowRight.addEventListener('click', () => {
-        const containerWidth = scrollContainer.scrollWidth / 3.3;
+        let containerWidth = scrollContainer.clientWidth;
+        console.log("El widht: " + containerWidth);
         scrollContainer.scrollBy({
             left: containerWidth, 
             behavior: 'smooth'
@@ -35,7 +36,6 @@ cargarContenidoAsincronico().then(() => {
         const scrollArrowLeft = flexingContainer.querySelector('.scroll-arrow-left');
         const scrollArrowRight = flexingContainer.querySelector('.scroll-arrow-right');
         const scrollContainer = flexingContainer.querySelector('.SeccionCartelera');
-
         aplicarDesplazamiento(scrollContainer, scrollArrowLeft, scrollArrowRight);
     });
 });

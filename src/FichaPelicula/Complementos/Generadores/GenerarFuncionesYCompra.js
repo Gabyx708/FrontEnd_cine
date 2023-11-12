@@ -10,8 +10,7 @@ async function CargarFunciones(id, pelicula) {
     } else {
         let contador = 0;
         for (const funcion of pelicula.funciones) {
-            const fechaFuncion = new Date(funcion.fecha);
-            if (funcion.fecha >= ObtenerDiaDeHoy()) {
+            if (ObtenerDate(funcion.fecha) >= new Date(ObtenerDiaDeHoy())) {
                 const cantTickets = await ApiTicket.GetCantTickets(funcion.funcionId);
                 if (cantTickets.cantidad > 0)
                 {
@@ -43,8 +42,11 @@ function SinFunciones(seccionContenedora)
 function ObtenerDiaDeHoy()
 {
     const today = new Date();
-    const dd = String(today.getDate()).padStart(2, '0');
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const yyyy = today.getFullYear();
-    return dd + '-' + mm + '-' + yyyy;
+    return new Date(today.getFullYear(), today.getMonth(), today.getDate());
+}
+
+function ObtenerDate(fechaString)
+{
+    const [day, month, year] = fechaString.split('-').map(Number);
+    return new Date(year, month - 1, day);
 }

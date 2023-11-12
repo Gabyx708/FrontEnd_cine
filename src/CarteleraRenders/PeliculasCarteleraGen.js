@@ -13,7 +13,7 @@ async function CargarCartelera(id, fecha, titulo, genero) {
     } else {
         const peliculasRepetidas = new Set();
         for (const funcion of funciones) {
-            if (!peliculasRepetidas.has(funcion.pelicula.peliculaId) && funcion.fecha <= ObtenerDiaDeHoy()) {
+            if (!peliculasRepetidas.has(funcion.pelicula.peliculaId) && ObtenerDate(funcion.fecha) >= new Date(ObtenerDiaDeHoy())) {
                 seccionContenedora.appendChild(GenerarPeliculaCartelera(funcion));
                 peliculasRepetidas.add(funcion.pelicula.peliculaId);
             }
@@ -37,8 +37,11 @@ function SinFunciones(seccionContenedora)
 function ObtenerDiaDeHoy()
 {
     const today = new Date();
-    const dd = String(today.getDate()).padStart(2, '0');
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const yyyy = today.getFullYear();
-    return yyyy + '-' + mm + '-' + dd;
+    return new Date(today.getFullYear(), today.getMonth(), today.getDate());
+}
+
+function ObtenerDate(fechaString)
+{
+    const [day, month, year] = fechaString.split('-').map(Number);
+    return new Date(year, month - 1, day);
 }

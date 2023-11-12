@@ -4,18 +4,15 @@
   margin-top: 15px;
   width: 600px;
   display: flex;
-
+  padding: 7px;
 }
 .buscador-titulo
 {
-  width: 70%;
-  padding-left: 10px;
-  margin-top: 2%;
-  border: black 1px solid;
-  border-radius: 50px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  width: 300px;
   background-color: #fffefebf;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 15px;
 }
 .calendario
 {
@@ -86,3 +83,38 @@
 
 /* Filtro de búsqueda */
 
+
+
+.buscador-personalizado
+{
+  display: flex;
+  max-width: 550px
+}
+
+.fecha-busqueda
+{
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px white solid;
+  margin-top: 2px;
+  height: 25px;
+  width: 200px;
+  background-color: #fffefebf;
+}
+
+.separador
+{
+  margin: 5px;
+}
+
+.texto-calendario
+{
+  align-items: center;
+  color: black;
+}
