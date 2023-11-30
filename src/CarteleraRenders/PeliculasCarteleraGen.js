@@ -8,7 +8,12 @@ async function CargarCartelera(id, fecha, titulo, genero) {
 
     if (funciones.length === 0) {
         const mensajeNoEncontrado = document.createElement('div');
-        mensajeNoEncontrado.textContent = 'NO HAY NINGUNA FUNCIÓN DISPONIBLE EN ESTE MOMENTO :(';
+        mensajeNoEncontrado.className = 'sin-pelis';
+        mensajeNoEncontrado.innerHTML= `
+        <span>UPS... PARECE QUE NO HAY NINGUNA FUNCIÓN DISPONIBLE</span>
+        <i class="fa-regular fa-face-sad-cry"></i>`;
+
+        
         return seccionContenedora.appendChild(mensajeNoEncontrado);
     } else {
         const peliculasRepetidas = new Set();
@@ -27,13 +32,6 @@ const cartelera = {
 
 export default cartelera;
 
-function SinFunciones(seccionContenedora)
-{
-    const mensajeNoEncontrado = document.createElement('div');
-    mensajeNoEncontrado.textContent = 'NO HAY NINGUNA FUNCIÓN DISPONIBLE EN ESTE MOMENTO :(';
-    return seccionContenedora.appendChild(mensajeNoEncontrado);
-}
-
 function ObtenerDiaDeHoy()
 {
     const today = new Date();
@@ -45,3 +43,5 @@ function ObtenerDate(fechaString)
     const [day, month, year] = fechaString.split('-').map(Number);
     return new Date(year, month - 1, day);
 }
+
+

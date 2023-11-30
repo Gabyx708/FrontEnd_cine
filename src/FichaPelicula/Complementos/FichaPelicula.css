@@ -4,6 +4,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+    text-decoration: none;
     
 }
 
@@ -12,6 +13,7 @@
     font-family: 'Roboto', sans-serif;
     background: rgba(46, 46, 46, 0.137);
     border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 h1 
@@ -71,12 +73,11 @@ h1
 
 .container-funcion-compra {
     display: flex;
-    margin-top: 1%;
+    margin-top: 20px;
 }
 
 .funciones {
     flex: 2; 
-    padding: 1%; 
 }
 
 .container-funcion-compra h3 {
@@ -102,11 +103,13 @@ h1
 }
 
 
-.funciones-disponibles a {
+.funciones-texto {
     user-select: none;
-    text-decoration: none;
+    margin: 3px;
     font-size: 13px;
+    padding: 2px;
     color: rgba(255, 255, 255, 0.89);
+
 }
 
 .funciones-disponibles th {
@@ -128,7 +131,9 @@ h1
 .tabla-funciones
 {
     width: 100%;
-    margin-left: 2%;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .titulo-funciones
@@ -168,21 +173,30 @@ h1
     align-items: center;
     background-color: rgb(254, 254, 254);
     border-radius: 150px;
-    width: 65%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
 }
 
 .botones-aum-dis {
+    display: flex;
     background: rgb(148, 146, 146);
     flex-grow: 1;
     padding: 8px 12px;
-    text-align: center;
     user-select: none;
     text-decoration: none;
     color: black;
     font-size: 20px;
     cursor: pointer;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones-aum-dis:hover
+{
+    background-color: #00f;
 }
 
 .bor-izq {
@@ -195,11 +209,6 @@ h1
     border-top-right-radius: 15px;
 }
 
-.texto-ticket
-{
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.788);
-}
 .cantidad-boletos {
     flex-grow: 2;
     padding: 8px;
@@ -216,31 +225,41 @@ h1
 {
     margin: 5px;
     background-color: #86868b13;
-    padding: 2px;
+    padding: 5px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    border-radius: 7px;
+}
+
+.boton-boleto:hover
+{
+    background-color: #00f;
 }
 
 .input-nombre
 {
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-top: 10px;
     border-radius: 10px;
-    margin-top: 5%;
+    width: 180px;
 }
   
 .confirmar-compra
 {
-    margin-top: 12%;
+    margin-top: 35px;
     display: flex;
     flex-flow: column wrap;
     place-content: center space-evenly;
     border: 1px solid rgba(138, 138, 138, 0.44);
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.247);
     align-content: center;
     flex-wrap: nowrap;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .texto-compra
@@ -263,9 +282,17 @@ h1
 .container-boton-compra
 {
     background: rgba(77, 77, 77, 0.486);
-    width: 50%;
+    width: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 15px;
     text-align: center;
+    border-radius: 7px;
+}
+
+.container-boton-compra:hover
+{
+    background-color: #00f;
 }
 
 /* Ventana Emergente para confirmar ticket */
@@ -310,4 +337,10 @@ h1
     font-size: 25px;
     color: rgba(255, 255, 255, 0.89);
     text-decoration: none;
+}
+
+.sin-pelis{
+    color: white;
+    height: 150px;
+    padding: 50px;
 }

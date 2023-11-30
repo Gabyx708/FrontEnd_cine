@@ -1,10 +1,10 @@
 /* Buscador */
 .buscador
 {
-  margin-top: 15px;
   width: 600px;
   display: flex;
   padding: 7px;
+  
 }
 .buscador-titulo
 {
@@ -13,6 +13,9 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   padding-left: 15px;
+  padding-top: 2px;
+  outline: none;
+  border-color: black;
 }
 .calendario
 {
@@ -28,30 +31,54 @@
 
 /* Menu Desplegable */
 .container-filtrador{
-  width: 100%;
+  margin-left: -7px;
 }
 
-.container-filtrador ul{
-	list-style: none;
-  padding-left: 1%;
+
+.container-filtrador-border
+{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: black 1px solid
+}
+
+.container-filtrador:hover{
+  border-bottom-right-radius: 0px;
+}
+
+.menu-filtro
+{
+  list-style: none;
+  padding-left: 5px;
+  margin: 0px;
+  width: auto;
 }
 
 .menu-filtro > li{
-	position: relative;
-	display: inline-block;
-  color: rgba(255, 255, 255, 0.89);
-  margin-right: 2%;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.89);
+  width: 146px;
+  padding-left: 5px;
+  padding-top: 2px;
 }
 
-.menu-filtro > li > a{
+.menu-filtro > li > span{
 	display: block;
-	color: rgba(255, 255, 255, 0.89);
+	color: black;
 	font-family: 'Open sans';
 	text-decoration: none;
 }
 
-.menu-filtro li a:hover{
-	color: rgb(124, 124, 124);
+.submenu-filtro li:hover
+{
+  background-color: #4a759921;
+}
+
+.submenu-filtro li span:hover{
+	color: #00f;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -60,18 +87,25 @@
 
 .submenu-filtro{
   position: absolute;
-	background: rgb(48, 33, 33);
-	visibility: hidden;
-	opacity: 0;
-  border-radius: 5px;
+  background-color: #c5c0c0;
+  border: 1px solid black;
+  border-top: none;
+  visibility: hidden;
+  opacity: 0;
+  list-style: none;
+  margin-left: -16px;
+  padding-left: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.submenu-filtro li a{
+.submenu-filtro li span{
 	display: block;
-	padding: 15px;
-	color: rgba(255, 255, 255, 0.89);
-	font-family: 'Open sans';
-	text-decoration: none;
+  padding: 15px;
+  padding-right: 25px;
+  color: black;
+  font-family: 'Open sans';
+  text-decoration: none;
 }
 
 .menu-filtro li:hover .submenu-filtro{
@@ -88,24 +122,27 @@
 .buscador-personalizado
 {
   display: flex;
-  max-width: 550px
+  max-width: 550px;
+  align-items: center;
 }
 
 .fecha-busqueda
 {
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 50px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px white solid;
-  margin-top: 2px;
-  height: 25px;
+  height: 27px;
   width: 200px;
   background-color: #fffefebf;
+  user-select: none;
+  border-color: black;
+}
+
+.acomodar-fecha
+{
+  margin-top: 2px;
 }
 
 .separador
@@ -113,8 +150,26 @@
   margin: 5px;
 }
 
+.seleccionar-fecha:hover
+{
+  cursor: pointer;
+  color: #00f;
+}
+
 .texto-calendario
 {
   align-items: center;
   color: black;
+}
+
+.sin-pelis{
+  color: white;
+  height: 150px;
+  padding: 50px;
+}
+
+.texto-buscador{
+  color: white;
+  margin-top: 20px;
+  padding-left: 23px;
 }

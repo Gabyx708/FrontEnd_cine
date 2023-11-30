@@ -10,19 +10,12 @@ elementosGenero.forEach(elemento => {
 
         if (filtroSeleccionado === 'null') {
             generoFiltrado.textContent = '';
-            quitarFiltro.style.display = 'none';
         } else {
             const textoGenero = elemento.textContent.trim();
             generoFiltrado.textContent = 'FILTRANDO POR: '+textoGenero;
-            quitarFiltro.style.display = 'show';
         }
     });
 });
 
 
-quitarFiltro.addEventListener('click', function(event) {
-    event.preventDefault();
-    generoFiltrado.textContent = '';
-    quitarFiltro.style.display = 'none';
-});
 

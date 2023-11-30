@@ -58,7 +58,7 @@ header{
 	text-decoration: none;
 }
 
-.menu li a:hover{
+.menu-opciones:hover{
 	background-color: rgba(138, 138, 138, 0.44);;
 	transition: all .3s;
 }
@@ -75,14 +75,15 @@ header{
   box-sizing: border-box;
   height: 27px;
   width: 0px;
-  padding: 0 5px;
+  padding-left: 10.5px;
   color: #000;
-  border-radius: 50px;
+  border-radius: 20px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   font-size: 15px;
   border: 2px solid #4a7599;
   transition: all .7s ease;
+  background-color: #fffefebf;
 }
 
 ::placeholder {
@@ -123,3 +124,54 @@ header{
 .botonn:hover {
   background: #4a7599;
 }
+
+#peliculas-resultado {
+  width: 0;
+  
+}
+
+#peliculas-resultado:not(:empty) {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  background-color: #c5c0c0;
+  border: 2px solid #4a7599;
+  width: 293px;
+  display: none;
+  z-index: 1000;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.input-nav-lista-visible {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 13px;
+  transition: none;
+}
+
+.pelicula-del-nav{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pelicula-del-nav:hover
+{
+  background-color: #4a759921;
+}
+
+.texto-pelicula-del-nav
+{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+

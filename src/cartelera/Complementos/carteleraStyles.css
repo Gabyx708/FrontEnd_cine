@@ -10,6 +10,8 @@
 #main{
   background: rgba(46, 46, 46, 0.137);
   border-radius: 15px;
+  margin-bottom: 30px;
+  min-height: 680px;
 }
 
 .boton{
@@ -17,6 +19,7 @@
 }
 
 .imagenpublicidad{
+  padding: 10px;
   height: 300px;
   width: 100%;
 }
@@ -32,9 +35,11 @@
 }
 .textoCartelera
 {
-	text-decoration: none;
+  text-decoration: none;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.788);
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .SeccionCartelera {
@@ -56,6 +61,11 @@
   text-align: center;
 }
 
+.peliculaCartelera:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
 .texto-cartelera a{
   font-size: 20px;
 }
@@ -64,4 +74,10 @@
 {
   display: flex;
   align-items: flex-end;
+}
+
+.sin-pelis{
+  color: white;
+  height: 150px;
+  padding: 50px;
 }

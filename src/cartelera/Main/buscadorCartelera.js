@@ -1,22 +1,24 @@
 function GenerarbuscadorCartelera() {
     const busc = document.createElement('div');
-    busc.className = 'container-filtrador';
+    busc.className = 'container-filtrador container-filtrador-border fecha-busqueda ';
     busc.innerHTML = `
     <ul class="menu-filtro">
         <li>
-            <a href="#">GENERO <i class="fas fa-caret-down"></i></a>
+            <div>
+                <span id='genero'>GENERO</span><i class="fas fa-caret-down separador"></i>
+            </div>
             <ul class="submenu-filtro">
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="null"> REESTABLECER</a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genAc"> ACCION</a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genAv"> AVENTURA</a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genFi"> FICCION</a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genCo"> COMEDIA </a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genDo"> DOCUMENTAL </a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genDr"> DRAMA </a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genFa"> FANTASIA </a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genMu"> MUSICAL </a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genSu"> SUSPENSO </a></li>
-                    <li> <a href="#" class="texto genero" data-filter-type="genero" data-filter-value="genTe"> TERROR </a> </li>  
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="null"> REESTABLECER</span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genAc"> ACCION</span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genAv"> AVENTURA</span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genFi"> FICCION</span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genCo"> COMEDIA </span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genDo"> DOCUMENTAL </span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genDr"> DRAMA </span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genFa"> FANTASIA </span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genMu"> MUSICAL </span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genSu"> SUSPENSO </span></li>
+                    <li> <span class="texto genero" data-filter-type="genero" data-filter-value="genTe"> TERROR </span> </li>  
             </ul>       
         </li>
         
@@ -26,6 +28,6 @@ function GenerarbuscadorCartelera() {
     return busc;
 }
 
-const contenedor = document.getElementById('filtrosMain');
+const contenedor = document.getElementById('buscadorInput');
 const buscadorCartelera = GenerarbuscadorCartelera();
 contenedor.appendChild(buscadorCartelera);

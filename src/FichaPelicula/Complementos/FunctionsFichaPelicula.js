@@ -36,11 +36,29 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (clickedElement.classList.contains('bor-der')) {
             const contadorElement = clickedElement.parentElement.querySelector('.cantidad-boletos');
             cantidadBoletos = parseInt(contadorElement.textContent) || 0;
-            cantidadBoletos++;
-            contadorElement.textContent = cantidadBoletos;
+            if (cantidadBoletos < document.getElementById('disponibles').dataset.value)
+            {
+                cantidadBoletos++;
+                contadorElement.textContent = cantidadBoletos;
+            }
+            else
+            {
+                console.error('NO HAY MÁS BOLETOS DIPONIBLES PARA COMPRAR');
+            }
+            
         }
 
         if (clickedElement.classList.contains('boton-compra')) {
+
+            if (nombreUsuario === '')
+            {
+                console.error('DEBE RELLENAR ESTE CAMPO');
+            }
+            if (cantidadBoletos <= 0)
+            {
+                console.error('DEBE COMPRAR MINIMO UN BOLETO');
+            }
+
             if (guardarIdPelicula != 0 && cantidadBoletos > 0 && nombreUsuario != '')
             {
                 console.log(ventanaModal)
@@ -50,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 ventanaModal=CrearTicket(guardarIdPelicula,cantidadBoletos,nombreUsuario);
             }
+            
             
         }
     });
@@ -72,7 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (fechaElement && horarioElement) {
                 const fecha = fechaElement.textContent;
                 const horario = horarioElement.textContent;
-                const dataId = funcionElement.textContent;
+                const dataId = funcionElement.dataset.value;
+                console.log(dataId);
                 const cantidad = cantidadElement.textContent
 
                 if (compraInstance) {
@@ -121,12 +141,6 @@ async function CrearTicket(guardarIdPelicula, cantidadBoletos, nombreUsuario) {
     mostrarModal();
     return ventanaModal;
 }
-
-
-
-
-
-
 
 
 

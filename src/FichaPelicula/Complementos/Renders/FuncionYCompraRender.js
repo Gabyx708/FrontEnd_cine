@@ -2,44 +2,44 @@ export default function GenerarFuncionYCompra(pelicula, funcion, cantTickets) {
     const funcionesDiponibles = document.createElement('div');
     funcionesDiponibles.className = 'funciones-disponibles';
     funcionesDiponibles.innerHTML = `
-        <a class="contenedor-funcion">
+        <div class="contenedor-funcion">
             <table class="tabla-funciones">
                 <tbody>
                     <tr>
-                        <th colspan="2"><a>${pelicula.titulo.toUpperCase()}</a> <a id='funcion'>${funcion.funcionId}</a</th>
+                        <th colspan="2"><span id='funcion' data-value="${funcion.funcionId}" class='funciones-texto'>${pelicula.titulo.toUpperCase()}</span></th>
                     </tr>
                     <tr>
                         <th>
-                            <a>FECHA:<a>
+                            <span class='funciones-texto'>FECHA:</span>
                         </th>
                         <th>
-                            <a id="fecha">${funcion.fecha}</a>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <a>HORARIO:<a>
-                        </th>
-                        <th>
-                            <a id="horario" data-horario="${funcion.horario}">${funcion.horario}</a>
+                            <span id="fecha" class='funciones-texto'>${funcion.fecha}</span>
                         </th>
                     </tr>
                     <tr>
                         <th>
-                            <a class="texto-ticket" id="test" data-id="${funcion.funcionId}">DISPONIBLES:</a>
+                            <span class='funciones-texto'>HORARIO:</span>
                         </th>
                         <th>
-                            <a id="cantidad"> ${cantTickets} </a>
+                            <span id="horario" class="funciones-texto" data-horario="${funcion.horario}">${funcion.horario}</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="funciones-texto" id="test" data-id="${funcion.funcionId}">DISPONIBLES:</span>
+                        </th>
+                        <th>
+                            <span id="cantidad" class='funciones-texto'> ${cantTickets} </span>
                         </th>
                 </tbody>
             </table>
-        </a>
+        </div>
         <div class="contenedor-tickets">
         
             <div class="boton-boleto">
-                <a class="texto-ticket">
+                <span class="texto-ticket funciones-texto">
                     SACAR BOLETO
-                </a>
+                </span>
             </div>
         </div>
     `;

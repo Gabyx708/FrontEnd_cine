@@ -35,7 +35,10 @@ export default funcionesDisponibles;
 function SinFunciones(seccionContenedora)
 {
     const mensajeNoEncontrado = document.createElement('div');
-    mensajeNoEncontrado.textContent = 'NO HAY NINGUNA FUNCIÓN DISPONIBLE EN ESTE MOMENTO :(';
+    mensajeNoEncontrado.className = 'sin-pelis';
+    mensajeNoEncontrado.innerHTML= `
+    <span>UPS... PARECE QUE NO HAY NINGUNA FUNCIÓN DISPONIBLE</span>
+    <i class="fa-regular fa-face-sad-cry"></i>`;
     return seccionContenedora.appendChild(mensajeNoEncontrado);
 }
 
